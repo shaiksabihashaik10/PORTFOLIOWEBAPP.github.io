@@ -5,6 +5,13 @@ body {
     background-attachment: fixed;
     padding-top: 70px;   /* adjust if navbar height changes */
 }
+/* This ensures all your glass cards have the same style without repeating code */
+.glass-card {
+    background: rgba(181, 200, 236, 0.84) !important;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
 
 #card{
     margin-left: 600px;
