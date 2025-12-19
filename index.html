@@ -1,188 +1,181 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shaik Sabiha | Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920') no-repeat center center fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
 
-    <title>Shaik Sabiha</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+        .hero-section {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        .navbar {
+            background: rgba(33, 37, 41, 0.9) !important;
+            backdrop-filter: blur(5px);
+        }
 
-  <a class="navbar-brand" href="#">Shaik Sabiha</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        .profile-img {
+            border: 5px solid white;
+            transition: transform 0.3s ease;
+        }
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
 
-      <li class="nav-item">
-        <a class="nav-link" href="#about" >About </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#cont">Contact </a>
-      </li>
+        .skill-label {
+            font-weight: 600;
+            margin-top: 15px;
+            display: block;
+        }
 
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+        .btn-custom {
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Shaik Sabi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-  <div id="home" class="jumbotron">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-md-5 text-center">
-        <img src="https://img.freepik.com/premium-photo/professional-woman-hijab-confidently-posing-business-suit-against-soft-gray-backdrop_934877-7774.jpg?w=360"
-             class="hero-img img-fluid rounded shadow"
-             alt="Sabiha"
-             style="max-width: 200px;">
-      </div>
-
-      <div class="col-md-7 text-left mt-4 mt-md-0">
-        <h1 class="display-4"><b>Shaik Sabiha</b></h1>
-        <p class="lead">
-          This is Shaik Sabiha, currently pursuing Final Year B.Tech in Computer Science and Engineering
-          at Gouthami Institute of Technology and Management for Women.
-        </p>
-        <p>
-          I am a passionate and self-motivated student with a strong interest in technology and web development.
-          I enjoy learning new programming skills, building real-time projects, and improving my technical
-          knowledge through hands-on experience.
-        </p>
-        <p>
-          <b>Technical Skills:</b> C, Python, HTML, CSS, Excel, C++
-        </p>
-        <p>
-          You can connect with me through my LinkedIn profile to know more about my academic and professional journey.
-        </p>
-      </div>
+<section id="home" class="hero-section container">
+    <div class="glass-card">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="https://img.freepik.com/premium-photo/professional-woman-hijab-confidently-posing-business-suit-against-soft-gray-backdrop_934877-7774.jpg?w=360"
+                     class="img-fluid rounded shadow profile-img" alt="Sabiha">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold text-dark">Shaik Sabiha</h1>
+                <p class="lead">Final Year B.Tech in Computer Science & Engineering</p>
+                <p class="text-muted">Gouthami Institute of Technology and Management for Women</p>
+                <hr>
+                <p>I am a passionate and self-motivated student with a strong interest in web development. I enjoy building real-time projects and improving my technical knowledge through hands-on experience.</p>
+                <p><strong>Technical Stack:</strong> C, Python, HTML, CSS, Excel, C++</p>
+            </div>
+        </div>
     </div>
+</section>
 
+<section id="about" class="container">
+    <div class="glass-card">
+        <h2 class="mb-4 fw-bold">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+                <img src="https://img.freepik.com/premium-photo/professional-woman-hijab-confidently-posing-business-suit-against-soft-gray-backdrop_934877-7774.jpg?w=360"
+                     class="img-fluid rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;" alt="Sabiha">
+            </div>
+            <div class="col-md-9">
+                <p>I am a motivated fresher looking for an opportunity to start my career. I want to use my skills and learn new things while contributing to the growth of a company.</p>
+                <div class="mt-4">
+                    <a href="https://github.com/shaiksabihashaik10" class="btn btn-dark btn-custom me-2">GitHub</a>
+                    <a href="https://www.linkedin.com/in/shaik-sabiha-8321592a6/" class="btn btn-primary btn-custom">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section id="skills" class="container">
+    <div class="glass-card">
+        <h2 class="fw-bold mb-4">Technical Proficiency</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="skill-label">HTML & CSS</span>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 85%"></div>
+                </div>
+                
+                <span class="skill-label">Python</span>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="skill-label">C / C++</span>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 70%"></div>
+                </div>
+                
+                <span class="skill-label">Excel & UI Design</span>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  </div>
-</div>
-  <div class="container">
-    <section id="about" class="glass-card">
-      <h2 id ="section-title"  >About Me</h2>
-  <div class="container">
+<section id="contact" class="container pb-5">
+    <div class="glass-card" style="background: rgba(29, 68, 227, 0.05);">
+        <h2 class="text-center fw-bold mb-4">Get In Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="https://formspree.io/f/mdkqqwpy" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Name</label>
+                            <input type="text" name="name" class="form-control border-0 shadow-sm" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Email</label>
+                            <input type="email" name="email" class="form-control border-0 shadow-sm" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Message</label>
+                        <textarea name="message" class="form-control border-0 shadow-sm" rows="4" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-custom mt-3 shadow">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div class="row align-items-center">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      <div class="col-md-4 text-center">
-        <img src="https://img.freepik.com/premium-photo/professional-woman-hijab-confidently-posing-business-suit-against-soft-gray-backdrop_934877-7774.jpg?w=360"
-             class="img-fluid rounded-circle shadow"
-             style="width: 200px;height: 300px;"
-             alt="Sabiha">
-      </div>
-
-     <div class="col-md-8">
-  <h5 class="card-title"><b>Shaik Sabiha</b></h5>
-  <p class="card-text">I am a motivated and enthusiastic fresher looking for an opportunity to start my career. I want to use my skills and learn new things while contributing to the growth of the company.</p>
-  <p class="card-text">Below are my professional links where you can find my projects and journey:</p>
-
-
-    <a href="https://github.com/shaiksabihashaik10" class="btn btn-primary btn-lg me-3">
-      GitHub
-    </a>
-
-
-    <a href="https://www.linkedin.com/in/shaik-sabiha-8321592a6/" class="btn btn-primary btn-lg" role="button">
-      LinkedIn
-    </a>
-  </div>
-  </div>
-  </div>
-    </section>
-<hr class="my-4">
-<div  id="skill" class="card  " >
-  <h2 id="skills" >Skills</h2>
-  <div id="progg" >
-    <h5>HTML & CSS</h5>
-  <div  class="progress">
-  <div class=" progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-    <h5>C</h5>
-<div  class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-    <h5>Python</h5>
-<div  class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-    <h5>Excel</h5>
-<div  class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-    <h5>UI</h5>
-<div  class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-
-</div>
-</div>
-    <hr class="my-4">
-    <div class="container py-5">
-  <div class="row justify-content-center">
-
-    <div class="col-md-8 col-lg-7">
-
-      <div id="contacts" class="glass-card p-4 shadow-lg rounded" style="background: rgba(181,200,236,0.84); color: white; border: 1px solid rgba(255, 255, 255, 0.1);">
-
-        <h2 id="cont" class="text-center mb-4" style="color: #2a2b2c;">Contact</h2>
-
-        <form action="https://formspree.io/f/mdkqqwpy" method="POST">
-
-          <div class="form-group mb-3 text-left">
-            <label for="name" class="mb-2"><b>Name</b></label>
-            <input type="text" class="form-control bg-white border-0 py-2" id="name" name="name"
-                   placeholder="Enter your name" required>
-          </div>
-
-          <div class="form-group mb-3 text-left">
-            <label for="email" class="mb-2"><b>Email address</b></label>
-            <input type="email" class="form-control bg-white border-0 py-2" id="email" name="email"
-                   placeholder="Enter your email" required>
-          </div>
-
-          <div class="form-group mb-3 text-left">
-            <label for="message" class="mb-2"><b>Message</b></label>
-            <textarea class="form-control bg-white border-0" id="message" name="message"
-                      rows="4" placeholder="Enter your message" required></textarea>
-          </div>
-
-          <div class="form-group mb-4 text-left">
-            <label for="phone" class="mb-2"><b>Phone Number</b></label>
-            <input type="tel" class="form-control bg-white border-0 py-2" id="phone" name="phone"
-                   placeholder="Enter your phone number">
-          </div>
-
-          <div class="text-left">
-            <button type="submit" class="btn btn-lg border-0 px-4" style="background-color: #1d44e3; color: #f6f1f1; font-weight: bold;">
-              Submit
-            </button>
-          </div>
-
-        </form>
-      </div> </div> </div> </div> ```
-
-#
-</div>
-  </body>
+</body>
 </html>
