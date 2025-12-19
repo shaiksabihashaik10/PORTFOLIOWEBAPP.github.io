@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80%27)%20no-repeat%20center%20center%20fixed;");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 70px;   /* adjust if navbar height changes */
+}
+
+#card{
+    margin-left: 600px;
+
+}
+#img{
+      width:150px;
+    height:80px;
+    object-fit:cover;
+    border-radius:50%;
+    margin: 10px auto;
+}
+#home{
+        width: 80rem;
+        margin-left: 200px;
+        margin-top: 50px;
+        background-color: rgba(181, 200, 236, 0.84);
+        border-color: #2a2b2c;
+
+}
+#about {
+    background-color: rgba(181, 200, 236, 0.84);   /* light grey */
+    border-radius: 10px;
+    margin-left: -90px;
+    width:80rem;
+    height:25rem;
+
+}
+
+#skill{
+        width: 80rem;
+        border-radius:10px;
+        margin : 0 auto;
+        background-color: rgba(181, 200, 236, 0.84);
+    margin-left: -90px;
+}
+#skills{
+
+        margin:20px auto;
+
+}
+#progg{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#con {
+  width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+#contacts{
+
+    width: 80rem;
+    background-color: rgba(181, 200, 236, 0.84);
+     border-radius: 8px;
+    margin-left: -21rem;
+    margin-top: -2rem;
+
+
+}
+.navbar .nav-link {
+  color: white !important;
+}
+
+
+#section-title{
+    text-align: center;
+    padding-top: 20px;
+
+}
